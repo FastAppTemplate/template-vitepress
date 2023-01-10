@@ -1,3 +1,4 @@
 dist
 node_modules
-nav.json
+docs/.vitepress/nav.json
+docs/.vitepress/sidebar.json

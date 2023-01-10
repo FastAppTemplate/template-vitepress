@@ -7,7 +7,7 @@
     "dev": "npm run generate && vitepress dev docs",
     "build": "npm run generate && vitepress build docs",
     "serve": "vitepress serve docs",
-    "generate": "ts-node ./script/generateNav.ts"
+    "generate": "ts-node ./script/generateNav.ts && ts-node ./script/generateSidebar.ts"
   },
   "keywords": [],
   "author": "",
