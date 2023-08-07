@@ -1,11 +1,22 @@
 import { defineConfig } from "vitepress";
-import nav from "./nav.json";
-import sidebar from "./sidebar.json";
 
 export default defineConfig({
   title: "docs",
+  lastUpdated: true,
   themeConfig: {
-    nav,
-    sidebar,
+    outline: 2,
+    search: {
+      provider: "local",
+    },
+    sidebar: [
+      {
+        text: "Guide",
+        items: [
+          { text: "Introduction", link: "/index" },
+          { text: "Docs1", link: "/docs1" },
+          { text: "Docs2", link: "/docs2" },
+        ],
+      },
+    ],
   },
 });
